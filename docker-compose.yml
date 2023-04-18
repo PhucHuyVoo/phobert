@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  app:
+    build: .
+    image: phobert:latest
+    restart: always
+    volumes:
+      - ./data/:/src/
+    ports:
+      - "8000:5000"
+    
